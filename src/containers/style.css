@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    height: 100vh;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__header {
+    flex-grow: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.app__table {
+    flex-grow: 1;
+    overflow-x: scroll;
+    width: 100vw;
+}
+
+.app__footer {
+    flex-grow: 0;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.app__table_title,
+.app__table_item {
+    width: 100%;
+    display: flex;
+}
+.app__table_title span {
+    background-color: #03a9f4;
+    text-transform: uppercase;
+}
+.app__table_title span,
+.app__table_item span {
+    min-width: 130px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.app__table_item:nth-child(2n+1) span {
+    background-color: #dcdcdc;
+}

@@ -1,0 +1,17 @@
+.pagination {
+    display: flex;
+}
+.pagination > div {
+    padding: 5px;
+    box-sizing: border-box;
+    transition: .2s;
+    font-size: 15px;
+    font-weight: bold;
+}
+.pagination > div:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+.selected {
+    color: #2196f3;
+}
